@@ -9,10 +9,10 @@ function App() {
     <ChakraProvider>
     <div className="App">
       <header className="App-header">
-       <NavBar marginTop={'02px'} />
+       <NavBar marginTop={'02px'}  />
       
       </header>
-      <div>
+      <div className='news'>
       <News />
       </div>
     </div>

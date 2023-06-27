@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Card, CardHeader, CardBody, CardFooter, Heading, Text, Button } from '@chakra-ui/react'
+import { Card, CardHeader, CardBody, CardFooter, Heading, Text, Button, Link ,Center} from '@chakra-ui/react'
 
 export class NewsItem extends Component {
     render() {
@@ -7,17 +7,17 @@ export class NewsItem extends Component {
 
         return (
             <>
-                <Card  p='3vh' m='5vh' width='70vh' height='70vh'>
+                <Card  p='1vh' m='3vh' width='80vh' >
                     <CardHeader>
-                        <Heading size='md'> {title}</Heading>
+                        <Heading textAlign={'center'} size='md'> {title}</Heading>
                     </CardHeader>
-                    <CardBody>
+                       <CardBody >
+                    <img src={imageUrl} alt="Business-Consulting-Image.jpg"  width="400px" height='200px'  />
                         <Text>{description}</Text>
-                        <Text>{author}</Text>
+                        
                     </CardBody>
-                    <CardFooter>
-                        <Button colorScheme='blue' >View here</Button>
-                    </CardFooter>
+                   
+                    
                 </Card>
             </>
         )

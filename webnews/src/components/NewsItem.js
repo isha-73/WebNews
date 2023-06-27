@@ -7,7 +7,7 @@ export class NewsItem extends Component {
 
         return (
             <>
-                <Card align='center' p='3vh' m='5vh'>
+                <Card  p='3vh' m='5vh' width='70vh' height='70vh'>
                     <CardHeader>
                         <Heading size='md'> {title}</Heading>
                     </CardHeader>
@@ -16,7 +16,7 @@ export class NewsItem extends Component {
                         <Text>{author}</Text>
                     </CardBody>
                     <CardFooter>
-                        <Button colorScheme='blue'>View here</Button>
+                        <Button colorScheme='blue' >View here</Button>
                     </CardFooter>
                 </Card>
             </>

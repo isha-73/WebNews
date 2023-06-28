@@ -18,10 +18,10 @@ const Navbar = () => {
       <Box display={{ base: "none", md: "block" }}>
         <ButtonGroup gap="2" p="3" variant={'unstyled'}>
           
+          <Link to='/'><Button>General</Button></Link>
           <Link to='/business' ><Button>Business</Button></Link>
           <Link to='/science'><Button>Science</Button></Link> 
-          <Link to='/enterntainent'><Button>Entertainment</Button></Link>
-          <Link to='/general'><Button>General</Button></Link>
+          <Link to='/entertainment'><Button>Entertainment</Button></Link>
           <Link to='/health'><Button>Health</Button></Link>
           <Link to='/technology'><Button>Technology</Button></Link>
         </ButtonGroup>

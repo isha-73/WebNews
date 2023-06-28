@@ -3,52 +3,38 @@ import './App.css';
 import NavBar from './components/NavBar';
 import { ChakraProvider } from '@chakra-ui/react'
 import News from './components/News';
-import {
-  BrowserRouter as Router,
-
-  Route,
-  Link
-} from "react-router-dom";
-import { Switch } from 'react-router-dom';
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 
 
 
 function App() {
   return (
+    <Router>
     <ChakraProvider>
       <div className="App">
-        <Router>
+      
           <header className="App-header">
-            <NavBar marginTop={'02px'} />
+            <NavBar marginTop={'2px'} />
           </header>
           {/* <div className='news'> */}
 
-          <Switch>
-            <Route path="/business">
-              <News category='business' />
-            </Route>
-            <Route path="/entertainment">
-              <News category='entertainment' />
-            </Route>
-            <Route path="/general">
-              <News category='general' />
-            </Route>
-            <Route path="/health">
-              <News category='health' />
-            </Route>
-            <Route path="/science">
-              <News category='science' />
-            </Route>
-            <Route path="/technology">
-              <News category='technology' />
-            </Route>
-
-
-          </Switch>
+          <Routes>
+            <Route path="/business" element={ <News key='1' category='business' />}/>
+            <Route path="/science" element={ <News key='2' category='science' />}/>
+            <Route path="/entertainment" element={ <News key='3' category='entertainment' />}/>
+            <Route path="/general" element={ <News key='4' category='general' />}/>
+            <Route path="/health" element={ <News key='5' category='health' />}/>
+            <Route path="/technology" element={ <News key='6' category='technology' />}/>
+            <Route path="/" element={ <News key='7' category='general' />}/>
+            
+            
+           
+          </Routes>
           {/* </div> */}
-        </Router>
+        
       </div>
     </ChakraProvider>
+    </Router>
   );
 }
 

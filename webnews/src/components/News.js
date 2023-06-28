@@ -1,16 +1,13 @@
 import React, { Component } from 'react'
 import NewsItem from './NewsItem'
-import { Container, Flex, Spacer, Center, Box, Button, IconButton } from '@chakra-ui/react'
+import { Container, Flex, Spacer, Center, Box, Button, IconButton ,Heading} from '@chakra-ui/react'
 import { ArrowBackIcon, ArrowForwardIcon } from '@chakra-ui/icons'
 import './News.css'
 import Loading from './Loading'
 
-const apiKey = 'apikey';
 
 export class News extends Component {
     articles = []
-
-
     constructor() {
 
         super();
@@ -22,7 +19,7 @@ export class News extends Component {
         }
     }
     async componentDidMount() {
-        let url = `https://newsapi.org/v2/top-headlines?country=in&category=business&apiKey=apikey&page=1&pageSize=20`
+        let url = `https://newsapi.org/v2/top-headlines?country=in&category=business&apiKey=bbc9fed3b3bf43609b20e507ea1c6504&page=1&pageSize=20`
         let data = await fetch(url);
         let parsedData = await data.json()
         console.log(parsedData);
@@ -57,11 +54,15 @@ export class News extends Component {
         console.log("Hello I am a render from News Component");
         return (
             <>
+           
                 <Box >
-                    <div>News</div>
+                <Heading p='2'
+                      fontSize={['2xl', '3xl', '4xl']}
+                      whiteSpace="normal"
+                      wordBreak="break-word">Explore recent Buisness news over India </Heading>
                     {this.state.loading && <Loading />}
                     <Flex wrap='wrap' justifyContent={'center'}>
-
+                   
                         {!this.state.loading&&this.state.articles.map((element) => {
                             return <div >
                                 <NewsItem key={element.url} title={element.title ? element.title.slice(0, 80) : ""} description={element.description ? element.description.slice(0, 100) : ""}

@@ -9,7 +9,7 @@ export class NewsItem extends Component {
         return (
             <>
             <a href={newsUrl} target='_blank'>
-                <Card   m='3vh' width={'50vh'} height={'90vh'} className='news-card' backgroundColor={'#c0bdbd'}>
+                <Card   m='3vh' width={'50vh'} height={'70vh'} className='news-card' backgroundColor={'#c0bdbd'}>
                     <CardHeader>
                         <Heading textAlign={'center'} size='md'> {title}</Heading>
                     </CardHeader>

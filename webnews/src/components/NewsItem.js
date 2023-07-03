@@ -11,7 +11,7 @@ export class NewsItem extends Component {
             <a href={newsUrl} target='_blank'>
                 <Card   m='3vh' width={'50vh'} height={'70vh'} className='news-card' backgroundColor={'#c0bdbd'}>
                     <CardHeader>
-                        <Heading textAlign={'center'} size='md'> {title}</Heading>
+                        <Heading textAlign={'center'} fontSize={'xl'}> {title}</Heading>
                     </CardHeader>
                        <CardBody display={'flex'} flexDirection={'column'} justifyContent={'center'} alignItems={'center'} >
                     <img src={imageUrl} alt="Business-Consulting-Image.jpg" />

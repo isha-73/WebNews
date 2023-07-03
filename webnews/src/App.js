@@ -26,9 +26,6 @@ function App() {
             <Route path="/health" element={ <News key='5' category='health' />}/>
             <Route path="/technology" element={ <News key='6' category='technology' />}/>
             <Route path="/" element={ <News key='7' category='general' />}/>
-            
-            
-           
           </Routes>
           {/* </div> */}
         

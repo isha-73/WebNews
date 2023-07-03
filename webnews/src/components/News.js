@@ -19,15 +19,16 @@ export class News extends Component {
 
     }
 
-    constructor() {
+    constructor(props) {
 
-        super();
+        super(props);
         console.log("Hello I am a constructor from News Component");
         this.state = {
             articles: this.articles,
             loading: false,
             page: 1
         }
+        document.title = `Web-News | ${this.props.category.charAt(0).toUpperCase() + this.props.category.slice(1).toLowerCase()}`
     }
     async componentDidMount() {
         let url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=bbc9fed3b3bf43609b20e507ea1c6504&page=1&pageSize=20`
@@ -72,7 +73,7 @@ export class News extends Component {
                     <Heading p='2'
                         fontSize={['2xl', '3xl', '4xl']}
                         whiteSpace="normal"
-                        wordBreak="break-word">Explore recent Buisness news over India with Top Headlines </Heading>
+                        wordBreak="break-word">`Explore recent {this.props.category.charAt(0).toUpperCase() + this.props.category.slice(1).toLowerCase()} news over India with Top Headlines` </Heading>
                     {this.state.loading && <Loading />}
                     <Flex wrap='wrap' justifyContent={'center'}>
 

@@ -22,8 +22,9 @@ export class News extends Component {
     }
 
     constructor(props) {
-
+       
         super(props);
+        console.log("In news js"+this.props.apiKey);
         console.log("Hello I am a constructor from News Component");
         this.state = {
             articles: this.articles,
@@ -86,8 +87,10 @@ export class News extends Component {
         return (
             <>
 
-                <Box >
-                    <Heading p='5'
+                <Box marginTop={'15vh'} position={'absolute'} alignItems={"center"}>
+                    <Heading 
+                        // 
+                        p='5'
                         fontSize='4xl'
                         whiteSpace="normal"
                         wordBreak="break-word">`Explore recent {this.props.category.charAt(0).toUpperCase() + this.props.category.slice(1).toLowerCase()} news over India with Top Headlines` </Heading>

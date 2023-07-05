@@ -19,6 +19,7 @@ const Navbar = () => {
       wrap="wrap"
       padding={4}
       color="white"
+     
       
     >
       <Box p={{ base: 2, md: 5 }}>
@@ -34,7 +35,7 @@ const Navbar = () => {
         />
       </Box>
       <Spacer />
-      <Box display={{ base: "none", md: "block" }}>
+      <Box display={{ base: "none", md: "block" }} >
         <ButtonGroup gap="2" p="3" variant={'unstyled'}>
           
           <Link to='/'><Button>General</Button></Link>

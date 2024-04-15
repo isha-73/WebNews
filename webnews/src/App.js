@@ -5,7 +5,7 @@ import { ChakraProvider } from '@chakra-ui/react'
 import News from './components/News';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import LoadingBar from 'react-top-loading-bar'
-const apiKey= process.env.REACT_APP_API_KEY;
+const apiKey= process.env.REACT_APP_API_KEY ;
 
 function App() {
   const [progress, setProgress] = useState(0);

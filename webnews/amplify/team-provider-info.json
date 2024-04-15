@@ -1,0 +1,33 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-webnews-dev-142513-authRole",
+      "UnauthRoleArn": "arn:aws:iam::689606403141:role/amplify-webnews-dev-142513-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::689606403141:role/amplify-webnews-dev-142513-authRole",
+      "Region": "eu-north-1",
+      "DeploymentBucketName": "amplify-webnews-dev-142513-deployment",
+      "UnauthRoleName": "amplify-webnews-dev-142513-unauthRole",
+      "StackName": "amplify-webnews-dev-142513",
+      "StackId": "arn:aws:cloudformation:eu-north-1:689606403141:stack/amplify-webnews-dev-142513/ecbc1ea0-da04-11ee-8b67-06157290b6cd",
+      "AmplifyAppId": "d2c2fv1yaobbbh"
+    },
+    "categories": {
+      "hosting": {
+        "S3AndCloudFront": {}
+      }
+    }
+  },
+  "webnews": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-webnews-webnews-145004-authRole",
+      "UnauthRoleArn": "arn:aws:iam::689606403141:role/amplify-webnews-webnews-145004-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::689606403141:role/amplify-webnews-webnews-145004-authRole",
+      "Region": "eu-north-1",
+      "DeploymentBucketName": "amplify-webnews-webnews-145004-deployment",
+      "UnauthRoleName": "amplify-webnews-webnews-145004-unauthRole",
+      "StackName": "amplify-webnews-webnews-145004",
+      "StackId": "arn:aws:cloudformation:eu-north-1:689606403141:stack/amplify-webnews-webnews-145004/659f8250-da08-11ee-8a5a-0ec568337136",
+      "AmplifyAppId": "d2c2fv1yaobbbh"
+    }
+  }
+}
